@@ -1,0 +1,81 @@
+.form {
+  min-width: 375px;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  padding: 80px;
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid #f0f0f0;
+}
+
+.form .title {
+  font-size: 1.3em;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 6px;
+}
+
+.form .form-group {
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.form .form-group label {
+  font-size: 0.8em;
+}
+
+.form .form-group .form-control {
+  width: 95%;
+  height: 35px;
+  outline: none;
+  border: 1px solid #f0f0f0;
+  border-radius: 20px;
+  padding: 0 10px;
+  margin: auto 5px;
+  transition: 0.3s;
+}
+
+.form .form-group .form-control.hover {
+  border: 1px solid #1890ff;
+}
+
+.form .btn {
+  width: 125px;
+  height: 35px;
+  border: 1px solid #f0f0f0;
+  letter-spacing: 2px;
+  border-radius: 20px;
+  float: right;
+}
+
+.form .btn.hover {
+  border: 1px solid #adadad;
+}
+
+.form .btn.btn-login {
+  color: white;
+  font-size: 1em;
+  background: #1890ff;
+  outline: none;
+}
+
+.form .btn.default {
+  background: white;
+  color: black;
+  width: 200px;
+}
+
+.form .btn.danger {
+  background: #f62d3d;
+}
+
+.form .select-form {
+  width: 120px;
+  border: 1px solid #f0f0f0;
+  padding: 5px;
+  margin-left: 30px;
+  outline: none;
+}

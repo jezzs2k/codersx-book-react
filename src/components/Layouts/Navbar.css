@@ -1,0 +1,130 @@
+.h-navbar {
+  width: 6rem;
+  height: 100vh;
+  position: fixed;
+  background-color: white;
+  z-index: 1000;
+  font-family: 'Roboto', sans-serif;
+}
+
+.h-navbar .h-navbar-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.h-navbar .h-navbar-nav .h-navbar-item {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.h-navbar .h-navbar-nav .h-navbar-item .h-nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.h-navbar .h-navbar-nav .h-navbar-item .h-nav-link .nav-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  background: #f2f2f2;
+  border: none;
+  border-radius: 10px;
+}
+
+.h-navbar .h-navbar-nav .h-navbar-item .h-nav-link .nav-icon img {
+  max-width: 2rem;
+}
+
+.h-navbar .h-navbar-nav .h-navbar-item .h-nav-link .nav-icon .link-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 100%;
+  transition: 0.3s ease-in-out;
+  filter: grayscale(100%) opacity(0.7);
+}
+
+.h-navbar .h-navbar-nav .h-navbar-item:hover .h-nav-link .nav-icon .link-icon {
+  filter: grayscale(0) opacity(1);
+}
+
+.h-navbar .h-navbar-nav .h-navbar-item .link-text {
+  color: #707070;
+  margin-top: 0.4rem;
+  transition: 0.3s ease-in-out;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.h-navbar .h-navbar-nav .h-navbar-item:hover .link-text {
+  color: black;
+}
+
+.h-navbar .h-navbar-nav .h-navbar-item.h-login,
+.h-navbar .h-navbar-nav .h-navbar-item.h-logout {
+  margin-bottom: 0.1rem;
+  margin-top: auto;
+  width: 0rem;
+}
+
+.h-navbar .h-navbar-nav .h-navbar-item.h-login .link-text,
+.h-navbar .h-navbar-nav .h-navbar-item.h-logout .link-text,
+.h-navbar .h-navbar-nav .h-navbar-item.h-signup .link-text {
+  text-decoration: underline;
+}
+
+main {
+  margin-left: 5rem;
+  padding: 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .h-navbar {
+    top: 0;
+    width: 6rem;
+    background-color: white;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .h-navbar {
+    max-width: 100vw;
+    width: 100vw;
+    height: 4rem;
+    bottom: 0;
+  }
+
+  .h-navbar .h-navbar-nav {
+    flex-direction: row;
+  }
+
+  .h-navbar .h-navbar-nav .h-navbar-item {
+    margin: 0;
+  }
+
+  .h-navbar .h-navbar-nav .h-navbar-item .h-nav-link .link-text {
+    display: none;
+  }
+
+  .h-navbar .h-navbar-nav .h-navbar-item.h-login,
+  .h-navbar .h-navbar-nav .h-navbar-item.h-logout,
+  .h-navbar .h-navbar-nav .h-navbar-item.h-singup {
+    display: none;
+  }
+
+  .h-navbar .h-navbar-nav .h-navbar-item .h-nav-link .nav-icon .link-icon {
+    filter: grayscale(0) opacity(1);
+  }
+
+  main {
+    margin: 0;
+    padding: 0;
+  }
+}

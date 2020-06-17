@@ -1,0 +1,51 @@
+.book-renter-child {
+  display: grid;
+  grid-template-columns: 0.1fr 0.8fr 1.1fr 0.4fr 0.6fr;
+  border: 1px solid #f0f0f0;
+  font-family: 'Roboto', sans-serif;
+  margin: 2px 0;
+}
+
+.book-renter-child .row,
+.book-renter-child .user,
+.book-renter-child .book,
+.book-renter-child .complete,
+.book-renter-child .date {
+  padding: 15px;
+  border-left: 1px solid #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+}
+
+.book-renter-child .row {
+  border-left: none;
+}
+
+.book-renter-child .row {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.book-renter-child .btn {
+  width: 100px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  background: green;
+  color: white;
+  border-radius: 20px;
+  outline: none;
+  transition: 0.3s ease-in;
+}
+
+.book-renter-child .btn:hover {
+  box-shadow: 0 0 3px gray;
+}
+
+.book-renter-child .date {
+  font-size: 1em;
+  font-weight: 500;
+  color: #f5222d;
+}
